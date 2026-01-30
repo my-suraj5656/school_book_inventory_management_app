@@ -23,7 +23,7 @@ app.use("/book-set", booksetRoute);
 // Listen to port
 conn().then(() => {
   try {
-    const port = process.env.port || 9050;
+    const port = process.env.port;
     app.listen(port, () => {
       console.log("Server is running on PORT", port);
     });
