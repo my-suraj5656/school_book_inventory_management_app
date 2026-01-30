@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:7000";
+const API = "https://school-book-inventory-management-app-1.onrender.com";
 
 export const fetchBoards = () => axios.get(`${API}/book/board`);
 export const fetchMediums = () => axios.get(`${API}/book/medium`);
