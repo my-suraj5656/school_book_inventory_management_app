@@ -36,7 +36,6 @@ backend
  ├── modules
  │    ├── book
  │    └── book-set
- ├── middleware
  └── index.js
 
 frontend
@@ -95,3 +94,4 @@ Localhost for development
 
 👨‍💻 Author
 Suraj Prasad
+
