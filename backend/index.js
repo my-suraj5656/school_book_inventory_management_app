@@ -8,7 +8,14 @@ import bookRoute from "./modules/v1/book/routes/route.js";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://school-book-inventory-management-ap-five.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+
 dotenv.config();
 
 // auth-Routes
